@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>JavaScript Tasks</title>
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container">
+        <span class="navbar-brand mb-0 h1">Dream Store</span>
+        <a
+          href="#"
+          class="pe-5 fs-4"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasWithBothOptions"
+          aria-controls="offcanvasWithBothOptions"
+        >
+          <i class="fa-solid fa-cart-shopping"></i
+        ></a>
+      </div>
+    </nav>
+    <!-- starting sidebar  -->
+    <div>
+      <div
+        class="offcanvas offcanvas-end"
+        data-bs-scroll="true"
+        tabindex="-1"
+        id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel"
+      >
+        <div class="offcanvas-header">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>Products</p>
+          <div class="show-product mb-5"></div>
+          <button class="btn btn-sm btn-success mt-5 my-3" id="price_btn">
+            Show Price
+          </button>
+          <div id="total"></div>
+        </div>
+      </div>
+    </div>
+    <!-- End sidebar  -->
+    <!-- Start products  -->
+    <div class="container products pt-5 mx-auto">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-5">
+          <div class="card" style="width: 18rem" price="20000">
+            <img
+              src="./Images/1.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">iPhone 13 128GB</h5>
+              <p class="card_text text-black-50 fs-6" price="20">
+                Shop the latest iPhone models and accessories
+              </p>
+              <button href="" class="add btn btn-primary rounded-pill fs-6">
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5">
+          <div class="card" style="width: 18rem" price="10000">
+            <img
+              src="./Images/2.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Samsung</h5>
+              <p class="card-text text-black-50 fs-6" price="1000">
+                Samsung Contact us online through chat and get support
+              </p>
+              <button href="" class="add btn btn-primary rounded-pill fs-6">
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5">
+          <div class="card" style="width: 18rem" price="3000">
+            <img
+              src="./Images/3.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Redmi</h5>
+              <p class="card-text text-black-50 fs-6">
+                XIAOMI Redmi 10A – 6.5 Dual SIM 4G Mobile Phone
+              </p>
+              <button href="" class="add btn btn-primary rounded-pill fs-6">
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5">
+          <div class="card" style="width: 18rem" price="25000">
+            <img
+              src="./Images/4.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Laptop HP Cori3</h5>
+              <p class="card-text text-black-50 fs-6">
+                HP PC HP 200 G4 All-in-One -9UG59EA: Intel Core I3-10110U
+              </p>
+              <button href="" class="add btn btn-primary rounded-pill fs-6">
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5">
+          <div class="card" style="width: 18rem" price="50000">
+            <img
+              src="./Images/5.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Laptop HP Cori7</h5>
+              <p class="card-text text-black-50 fs-6">
+                Intel Core I7-12700H - 16GB RAM - 1TB SSD
+              </p>
+              <button href="" class="add btn btn-primary rounded-pill fs-6">
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5">
+          <div class="card" style="width: 18rem" price="39000">
+            <img
+              src="./Images/6.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Gaming Laptop</h5>
+              <p class="card-text text-black-50 fs-6">
+                Intel Core I7-12700H - 16GB RAM - 1TB SSD
+              </p>
+              <button href="" class="add btn btn-primary rounded-pill fs-6">
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5">
+          <div class="card" style="width: 18rem" price="45000">
+            <img
+              src="./Images/7.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">LG Monitor</h5>
+              <p class="card-text text-black-50 fs-6">
+                LG monitors provide a superior viewing experience
+              </p>
+              <button href="" class="add btn btn-primary rounded-pill fs-6">
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5">
+          <div class="card" style="width: 18rem" price="56000">
+            <img
+              src="./Images/8.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Samsung Monitor</h5>
+              <p class="card-text text-black-50 fs-6">
+                World class immersion and performance of Samsung
+              </p>
+              <button href="" class="add btn btn-primary rounded-pill fs-6">
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5">
+          <div class="card" style="width: 18rem" price="34000">
+            <img
+              src="./Images/9.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Dell Monitor</h5>
+              <p class="card-text text-black-50 fs-sm">
+                Enhance your experience with high-quality 4K and 8K
+              </p>
+              <button href="" class="add btn btn-primary rounded-pill fs-6">
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End products  -->
+
+    <script src="./java.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
